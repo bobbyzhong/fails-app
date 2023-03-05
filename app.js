@@ -9,7 +9,7 @@ const userRoutes = require("./routes/users");
 const indexRoutes = require("./routes/index");
 const checkAuthorization = require("./utils/authorization");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 const CONNECTION_STRING = "postgres://localhost:5432/faildb";
 
 const VIEWS_PATH = path.join(__dirname, "/views");
